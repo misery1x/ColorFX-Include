@@ -97,29 +97,12 @@ using namespace ColorFX;
 
 int main()
 {
-    std::cout << "=== ColorFX Library Demo ===\n\n";
+    std::cout << "=== ColorFX Library\n\n";
     
-    // Functional API
-    std::cout << colored(RED, "Hello, World!") << "\n";
-    std::cout << colored(GREEN, "Success message", true) << "\n";
-    std::cout << colored(BLUE, "Information") << "\n\n";
+    std::cout << Text("Welcome").cyan() << " to " << Text("ColorFX").gold() << std::endl;
     
-    // Method chaining
-    std::cout << Text("Welcome").cyan() << " to " 
-              << Text("ColorFX").gold() << "!\n";
-              
-    std::cout << Text("Error:").bright_red() << " " 
-              << Text("Something went wrong").red() << "\n";
-              
-    std::cout << Text("✓ Task completed").bright_green() << "\n\n";
-    
-    // Color showcase
-    std::cout << "Colors: ";
-    std::cout << Text("●").red() << " " << Text("●").green() << " " 
-              << Text("●").blue() << " " << Text("●").yellow() << " "
-              << Text("●").magenta() << " " << Text("●").cyan() << "\n";
-    
-    return 0;
+    std::cout << "Color Palette:\n";
+    std::cout << Text("|").red() << " " << Text("|").green() << " "  << Text("|").blue() << " " << Text("|").yellow() << " " << Text("|").magenta() << " " << Text("||").cyan() << "\n";
 }
 ```
 
@@ -139,4 +122,4 @@ This project is open source. Feel free to use it in your projects!
 
 ---
 
-⭐ **Star this repo if you find it useful!** ⭐ 
+Made with love by stackswise ❤️
